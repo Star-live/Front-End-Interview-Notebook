@@ -25,7 +25,7 @@
 // console.log(parseInt(4).toString(2));
 
 
-console.log(parseInt('123a2'));
+/* console.log(parseInt('123a2'));
 console.log(Number('123a2'));
 var c = 2 + '3';
 console.log(typeof c);
@@ -38,4 +38,18 @@ function arrayPlus(a) {
 }
 var s = [1, 2, 3];
 arrayPlus(s);
-console.log(s);
+console.log(s); */
+/* a = [1,2,3]
+console.log(Number(a));
+console.log(a.toString()); */
+
+
+function format1(number) {
+    return Intl.NumberFormat().format(number);
+}
+function format2(number) {
+    return number.toLocaleString('en')
+}
+
+console.log(format1(1234567.12332));
+console.log(format2(1234567.12332));
